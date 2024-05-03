@@ -1,17 +1,5 @@
-/*
-<div id="parent">
-    <div id="child1">
-        <h1>child1</h1>
-        <h2>child2</h2>
-    </div>
-    <div id="child2">
-        <h1>child1</h1>
-        <h2>child2</h2>
-    </div>
-</div>
-
-
-*/
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 const parent = React.createElement('div', { id: 'parent' }, [
   React.createElement('div', { id: 'child1' }, [
@@ -25,5 +13,3 @@ const parent = React.createElement('div', { id: 'parent' }, [
 ])
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 root.render(parent)
-
-// console.log('heading --', heading)
